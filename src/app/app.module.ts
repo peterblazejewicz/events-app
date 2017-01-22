@@ -9,11 +9,14 @@ import './rxjs-extensions';
 import { appRoutes } from './app.routes';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './navbar/navbar.component';
+import { EventsListComponent, EventThumbnailComponent } from './events/';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
+    NavBarComponent,
+    EventsListComponent,
+    EventThumbnailComponent
   ],
   imports: [
     BrowserModule,
