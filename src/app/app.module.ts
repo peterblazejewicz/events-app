@@ -9,7 +9,10 @@ import './rxjs-extensions';
 import { appRoutes } from './app.routes';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './navbar/navbar.component';
-import { EventsListComponent, EventThumbnailComponent } from './events/';
+import { EventsListComponent,
+  EventThumbnailComponent,
+  EventListResolver,
+  EventService } from './events/';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { EventsListComponent, EventThumbnailComponent } from './events/';
       preloadingStrategy: PreloadAllModules
     })
   ],
-  providers: [],
+  providers: [
+    EventService,
+    EventListResolver
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
