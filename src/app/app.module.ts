@@ -5,14 +5,18 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 
 import './rxjs-extensions';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { appRoutes } from './app.routes';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './navbar/navbar.component';
-import { EventsListComponent,
+import {
+  EventsListComponent,
   EventThumbnailComponent,
   EventListResolver,
-  EventService } from './events/';
+  EventService,
+  EventInMemoryService
+} from './events/';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,9 @@ import { EventsListComponent,
     HttpModule,
     RouterModule.forRoot(appRoutes, {
       preloadingStrategy: PreloadAllModules
+    }),
+    InMemoryWebApiModule.forRoot(EventInMemoryService, {
+      delay: 1000
     })
   ],
   providers: [
