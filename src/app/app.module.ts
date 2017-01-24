@@ -16,7 +16,8 @@ import {
   EventListResolver,
   EventService,
   EventInMemoryService,
-  EventDetailsComponent
+  EventDetailsComponent,
+  EventResolver
 } from './events/';
 
 @NgModule({
@@ -40,7 +41,8 @@ import {
   ],
   providers: [
     EventService,
-    EventListResolver
+    EventListResolver,
+    EventResolver
   ],
   bootstrap: [AppComponent]
 })

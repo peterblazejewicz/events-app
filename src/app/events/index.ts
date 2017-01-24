@@ -1,3 +1,4 @@
+import { EventResolver } from './shared/event-resolver.service';
 import { EventService } from './shared/event.service';
 import { EventListResolver } from './list/event-list-resolver.service';
 import { EventsListComponent } from './list/events-list.component';
@@ -14,5 +15,6 @@ export {
   EventListResolver,
   EventService,
   EventInMemoryService,
-  EventDetailsComponent
+  EventDetailsComponent,
+  EventResolver
 }
