@@ -15,7 +15,8 @@ import {
   EventThumbnailComponent,
   EventListResolver,
   EventService,
-  EventInMemoryService
+  EventInMemoryService,
+  EventDetailsComponent
 } from './events/';
 
 @NgModule({
@@ -23,7 +24,8 @@ import {
     AppComponent,
     NavBarComponent,
     EventsListComponent,
-    EventThumbnailComponent
+    EventThumbnailComponent,
+    EventDetailsComponent
   ],
   imports: [
     BrowserModule,
