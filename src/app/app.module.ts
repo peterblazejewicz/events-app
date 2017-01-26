@@ -19,6 +19,7 @@ import {
   EventDetailsComponent,
   EventResolver
 } from './events/';
+import { SessionListComponent } from './sessions/list/session-list.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {
     NavBarComponent,
     EventsListComponent,
     EventThumbnailComponent,
-    EventDetailsComponent
+    EventDetailsComponent,
+    SessionListComponent
   ],
   imports: [
     BrowserModule,
